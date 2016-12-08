@@ -1,5 +1,11 @@
 # geocrowd
 
+*Dashboard for Geocrowd: Peatfire Project*
+
+This repo serves as Geocrowd Intelligence Support System Dashboard for the geocrowd project. The dashboard provides RESTFull API 
+to be used in [Geocrowd: Peatfire App](github.com/ppids-ugm/geocrowd) as well as to provide platform for data analytics collected 
+from the App, social media mining and AVHRSS-MODIS Hotspot API.
+
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 4.1.0.
 
 ## Getting Started
@@ -22,6 +28,14 @@ This project was generated with the [Angular Full-Stack Generator](https://githu
 ## Build & development
 
 Run `gulp build` for building and `gulp serve` for preview.
+
+Deploying cycle to Heroku:
+
+Build the Dashboard App: `gulp build`
+
+Push to Heroku: `gulp buildcontrol:heroku`
+
+Open the App: `heroku open`
 
 ## Testing
 
