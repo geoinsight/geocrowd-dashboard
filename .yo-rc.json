@@ -15,10 +15,10 @@
     "modelsNeedle": "// Insert models below",
     "filters": {
       "js": true,
-      "ts": true,
+      "babel": true,
       "flow": false,
       "html": true,
-      "sass": true,
+      "css": true,
       "uirouter": true,
       "bootstrap": true,
       "uibootstrap": true,
@@ -52,10 +52,10 @@
       "webpack"
     ],
     "extensions": [
-      "ts",
+      "babel",
       "js",
       "html",
-      "scss"
+      "css"
     ],
     "directiveSimpleTemplates": "",
     "directiveComplexTemplates": "",
