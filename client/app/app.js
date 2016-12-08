@@ -1,7 +1,7 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
+import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
@@ -15,7 +15,8 @@ import uiBootstrap from 'angular-ui-bootstrap';
 
 import {
   routeConfig
-} from './app.config';
+}
+from './app.config';
 
 import _Auth from '../components/auth/auth.module';
 import account from './account';
@@ -29,9 +30,11 @@ import socket from '../components/socket/socket.service';
 
 import './app.css';
 
-angular.module('geocrowdApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, navbar, footer, main, constants, socket, util
-])
+angular.module('geocrowdApp', [ngCookies, ngResource, ngSanitize,
+    'btford.socket-io', uiRouter,
+    uiBootstrap, _Auth, account, admin, navbar, footer, main, constants,
+    socket, util
+  ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
     'ngInject';
@@ -39,7 +42,7 @@ angular.module('geocrowdApp', [ngCookies, ngResource, ngSanitize, 'btford.socket
 
     $rootScope.$on('$stateChangeStart', function(event, next) {
       Auth.isLoggedIn(function(loggedIn) {
-        if(next.authenticate && !loggedIn) {
+        if (next.authenticate && !loggedIn) {
           $location.path('/login');
         }
       });
