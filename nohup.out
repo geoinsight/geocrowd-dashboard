@@ -1,0 +1,107 @@
+[00:30:42] Requiring external module babel-register
+[00:30:44] Using gulpfile ~/projects/geocrowd-dashboard/gulpfile.babel.js
+[00:30:44] Starting 'serve'...
+[00:30:44] Starting 'clean:tmp'...
+[00:30:44] Starting 'constant'...
+[00:30:44] Starting 'env:all'...
+[00:30:44] Finished 'env:all' after 2.14 ms
+[00:30:44] Finished 'constant' after 79 ms
+[00:30:44] Finished 'clean:tmp' after 113 ms
+[00:30:44] Starting 'lint:scripts'...
+[00:30:44] Starting 'lint:scripts:client'...
+[00:30:44] Starting 'lint:scripts:server'...
+[00:30:44] Starting 'inject'...
+[00:30:44] Starting 'inject:js'...
+[00:30:44] Starting 'inject:css'...
+[00:30:44] Starting 'inject:scss'...
+[00:30:44] gulp-inject 2 files into index.html.
+[00:30:44] gulp-inject 6 files into app.scss.
+[00:30:44] Finished 'inject:css' after 372 ms
+[00:30:44] Finished 'inject:scss' after 383 ms
+[00:30:44] gulp-inject 29 files into index.html.
+[00:30:44] Finished 'inject:js' after 497 ms
+[00:30:44] Finished 'inject' after 498 ms
+
+client/app/account/settings/settings.controller.js
+  line 4   col 10  Class properties must be methods. Expected '(' but instead saw '='.
+  line 4   col 13  Expected '(' and instead saw '}'.
+  line 4   col 14  Expected an identifier and instead saw ';'.
+  line 11  col 3   Expected '(' and instead saw 'changePassword'.
+  line 11  col 17  Expected an identifier and instead saw '('.
+  line 8   col 17  'Auth' is not defined.
+  line 14  col 9   'form' is not defined.
+  line 20  col 11  'form' is not defined.
+
+  ✖  3 errors
+  ⚠  5 warnings
+
+[00:30:45] Finished 'lint:scripts:server' after 772 ms
+
+client/components/sbadmin2/js/sb-admin-2.js
+  line 7   col 5   Missing "use strict" statement.
+  line 14  col 5   Missing "use strict" statement.
+  line 14  col 33  Strings must use singlequote.
+  line 26  col 25  Expected '{' and instead saw 'height'.
+  line 28  col 30  Strings must use singlequote.
+  line 28  col 48  Strings must use singlequote.
+  line 28  col 65  Strings must use singlequote.
+  line 37  col 28  Expected '===' and instead saw '=='.
+
+  ✖  2 errors
+  ⚠  6 warnings
+
+
+client/components/sbadmin2/js/sb-admin-2.min.js
+  line 6  col 14   Missing "use strict" statement.
+  line 6  col 28   Strings must use singlequote.
+  line 6  col 41   Missing semicolon.
+  line 6  col 57   Missing "use strict" statement.
+  line 6  col 85   Strings must use singlequote.
+  line 6  col 204  Strings must use singlequote.
+  line 6  col 225  Strings must use singlequote.
+  line 6  col 257  Strings must use singlequote.
+  line 6  col 281  Strings must use singlequote.
+  line 6  col 281  Expected an assignment or function call and instead saw an expression.
+  line 6  col 400  Strings must use singlequote.
+  line 6  col 418  Strings must use singlequote.
+  line 6  col 425  Strings must use singlequote.
+  line 6  col 425  Expected an assignment or function call and instead saw an expression.
+  line 6  col 426  Missing semicolon.
+  line 6  col 469  Strings must use singlequote.
+  line 6  col 507  Expected '===' and instead saw '=='.
+  line 6  col 508  Missing semicolon.
+  line 6  col 528  Strings must use singlequote.
+  line 6  col 555  Strings must use singlequote.
+  line 6  col 557  Expected '{' and instead saw 'break'.
+  line 6  col 589  Strings must use singlequote.
+  line 6  col 599  Missing semicolon.
+  line 6  col 601  Expected an assignment or function call and instead saw an expression.
+
+  ✖  2 errors
+  ⚠  22 warnings
+
+[00:30:45] Finished 'lint:scripts:client' after 818 ms
+[00:30:45] Finished 'lint:scripts' after 819 ms
+[00:30:45] Starting 'wiredep:client'...
+[00:30:45] Finished 'wiredep:client' after 50 ms
+[00:30:45] Starting 'transpile:client'...
+[00:30:45] Starting 'styles'...
+[00:30:46] Finished 'styles' after 905 ms
+[00:30:46] Finished 'transpile:client' after 1.29 s
+[00:30:46] Starting 'start:server'...
+[00:30:46] Finished 'start:server' after 19 ms
+[00:30:46] Starting 'start:client'...
+[nodemon] 1.11.0
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: /home/danylaksono/projects/geocrowd-dashboard/server/**/*
+[nodemon] starting `node server`
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: EBADF: bad file descriptor, read
+  at Error (native)
+
+Express server listening on 9000, in development mode
+(node:29727) DeprecationWarning: crypto.pbkdf2 without specifying a digest is deprecated. Please specify a digest
+finished populating users
